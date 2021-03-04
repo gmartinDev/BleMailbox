@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		826AD0C725EDE45800D9FE82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD0C625EDE45800D9FE82 /* AppDelegate.swift */; };
+		826AD0D025EDE45900D9FE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 826AD0CF25EDE45900D9FE82 /* Assets.xcassets */; };
+		826AD0D325EDE45900D9FE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826AD0D125EDE45900D9FE82 /* LaunchScreen.storyboard */; };
+		826AD0DE25EDE45900D9FE82 /* Bluetooth_MailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD0DD25EDE45900D9FE82 /* Bluetooth_MailboxTests.swift */; };
+		826AD0E925EDE45900D9FE82 /* Bluetooth_MailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD0E825EDE45900D9FE82 /* Bluetooth_MailboxUITests.swift */; };
+		826AD0FB25EDE49F00D9FE82 /* PackageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD0FA25EDE49F00D9FE82 /* PackageListViewController.swift */; };
+		826AD11125EDE6C400D9FE82 /* PackageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD11025EDE6C400D9FE82 /* PackageListView.swift */; };
+		826AD11925EDE79400D9FE82 /* PackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD11825EDE79400D9FE82 /* PackageModel.swift */; };
+		826AD12125EDE88C00D9FE82 /* PackageTrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD12025EDE88C00D9FE82 /* PackageTrackingModel.swift */; };
+		826AD12725EDEEF000D9FE82 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 826AD12625EDEEF000D9FE82 /* SnapKit */; };
+		826AD12C25EDEF7900D9FE82 /* PackageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD12B25EDEF7900D9FE82 /* PackageListCell.swift */; };
+		826AD13125EDF7CA00D9FE82 /* PackageDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD13025EDF7CA00D9FE82 /* PackageDetailController.swift */; };
+		826AD13625EDF7EB00D9FE82 /* PackageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD13525EDF7EB00D9FE82 /* PackageDetailView.swift */; };
+		826AD13F25EDFAF600D9FE82 /* PackageDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD13E25EDFAF600D9FE82 /* PackageDetailHeaderView.swift */; };
+		826AD14725EE032F00D9FE82 /* PackageTrackingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD14625EE032F00D9FE82 /* PackageTrackingCell.swift */; };
+		826AD14F25EF185D00D9FE82 /* MailboxBluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD14E25EF185D00D9FE82 /* MailboxBluetoothService.swift */; };
+		826AD15A25EF22A700D9FE82 /* MailboxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD15925EF22A700D9FE82 /* MailboxModel.swift */; };
+		826AD15F25EF26F500D9FE82 /* MailboxPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD15E25EF26F500D9FE82 /* MailboxPeripheral.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		826AD0DA25EDE45900D9FE82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 826AD0BB25EDE45800D9FE82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 826AD0C225EDE45800D9FE82;
+			remoteInfo = "Bluetooth Mailbox";
+		};
+		826AD0E525EDE45900D9FE82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 826AD0BB25EDE45800D9FE82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 826AD0C225EDE45800D9FE82;
+			remoteInfo = "Bluetooth Mailbox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		826AD0C325EDE45800D9FE82 /* Bluetooth Mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth Mailbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		826AD0C625EDE45800D9FE82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		826AD0CF25EDE45900D9FE82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		826AD0D225EDE45900D9FE82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		826AD0D425EDE45900D9FE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826AD0D925EDE45900D9FE82 /* Bluetooth MailboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bluetooth MailboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		826AD0DD25EDE45900D9FE82 /* Bluetooth_MailboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth_MailboxTests.swift; sourceTree = "<group>"; };
+		826AD0DF25EDE45900D9FE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826AD0E425EDE45900D9FE82 /* Bluetooth MailboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bluetooth MailboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		826AD0E825EDE45900D9FE82 /* Bluetooth_MailboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth_MailboxUITests.swift; sourceTree = "<group>"; };
+		826AD0EA25EDE45900D9FE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826AD0FA25EDE49F00D9FE82 /* PackageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageListViewController.swift; sourceTree = "<group>"; };
+		826AD11025EDE6C400D9FE82 /* PackageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageListView.swift; sourceTree = "<group>"; };
+		826AD11825EDE79400D9FE82 /* PackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageModel.swift; sourceTree = "<group>"; };
+		826AD12025EDE88C00D9FE82 /* PackageTrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTrackingModel.swift; sourceTree = "<group>"; };
+		826AD12B25EDEF7900D9FE82 /* PackageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageListCell.swift; sourceTree = "<group>"; };
+		826AD13025EDF7CA00D9FE82 /* PackageDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailController.swift; sourceTree = "<group>"; };
+		826AD13525EDF7EB00D9FE82 /* PackageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailView.swift; sourceTree = "<group>"; };
+		826AD13E25EDFAF600D9FE82 /* PackageDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailHeaderView.swift; sourceTree = "<group>"; };
+		826AD14625EE032F00D9FE82 /* PackageTrackingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTrackingCell.swift; sourceTree = "<group>"; };
+		826AD14E25EF185D00D9FE82 /* MailboxBluetoothService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxBluetoothService.swift; sourceTree = "<group>"; };
+		826AD15925EF22A700D9FE82 /* MailboxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxModel.swift; sourceTree = "<group>"; };
+		826AD15E25EF26F500D9FE82 /* MailboxPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxPeripheral.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		826AD0C025EDE45800D9FE82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826AD12725EDEEF000D9FE82 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826AD0D625EDE45900D9FE82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826AD0E125EDE45900D9FE82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		826AD0BA25EDE45800D9FE82 = {
+			isa = PBXGroup;
+			children = (
+				826AD0C525EDE45800D9FE82 /* Bluetooth Mailbox */,
+				826AD0DC25EDE45900D9FE82 /* Bluetooth MailboxTests */,
+				826AD0E725EDE45900D9FE82 /* Bluetooth MailboxUITests */,
+				826AD0C425EDE45800D9FE82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		826AD0C425EDE45800D9FE82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				826AD0C325EDE45800D9FE82 /* Bluetooth Mailbox.app */,
+				826AD0D925EDE45900D9FE82 /* Bluetooth MailboxTests.xctest */,
+				826AD0E425EDE45900D9FE82 /* Bluetooth MailboxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		826AD0C525EDE45800D9FE82 /* Bluetooth Mailbox */ = {
+			isa = PBXGroup;
+			children = (
+				826AD0F925EDE48700D9FE82 /* Controllers */,
+				826AD10F25EDE64D00D9FE82 /* Models */,
+				826AD14B25EF165700D9FE82 /* Services */,
+				826AD10E25EDE63500D9FE82 /* Views */,
+				826AD0C625EDE45800D9FE82 /* AppDelegate.swift */,
+				826AD0CF25EDE45900D9FE82 /* Assets.xcassets */,
+				826AD0D125EDE45900D9FE82 /* LaunchScreen.storyboard */,
+				826AD0D425EDE45900D9FE82 /* Info.plist */,
+			);
+			path = "Bluetooth Mailbox";
+			sourceTree = "<group>";
+		};
+		826AD0DC25EDE45900D9FE82 /* Bluetooth MailboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				826AD0DD25EDE45900D9FE82 /* Bluetooth_MailboxTests.swift */,
+				826AD0DF25EDE45900D9FE82 /* Info.plist */,
+			);
+			path = "Bluetooth MailboxTests";
+			sourceTree = "<group>";
+		};
+		826AD0E725EDE45900D9FE82 /* Bluetooth MailboxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				826AD0E825EDE45900D9FE82 /* Bluetooth_MailboxUITests.swift */,
+				826AD0EA25EDE45900D9FE82 /* Info.plist */,
+			);
+			path = "Bluetooth MailboxUITests";
+			sourceTree = "<group>";
+		};
+		826AD0F925EDE48700D9FE82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				826AD0FA25EDE49F00D9FE82 /* PackageListViewController.swift */,
+				826AD13025EDF7CA00D9FE82 /* PackageDetailController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		826AD10E25EDE63500D9FE82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				826AD13A25EDFADA00D9FE82 /* Table Component Views */,
+				826AD11025EDE6C400D9FE82 /* PackageListView.swift */,
+				826AD13525EDF7EB00D9FE82 /* PackageDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		826AD10F25EDE64D00D9FE82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				826AD11825EDE79400D9FE82 /* PackageModel.swift */,
+				826AD12025EDE88C00D9FE82 /* PackageTrackingModel.swift */,
+				826AD15925EF22A700D9FE82 /* MailboxModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		826AD13A25EDFADA00D9FE82 /* Table Component Views */ = {
+			isa = PBXGroup;
+			children = (
+				826AD12B25EDEF7900D9FE82 /* PackageListCell.swift */,
+				826AD13E25EDFAF600D9FE82 /* PackageDetailHeaderView.swift */,
+				826AD14625EE032F00D9FE82 /* PackageTrackingCell.swift */,
+			);
+			path = "Table Component Views";
+			sourceTree = "<group>";
+		};
+		826AD14B25EF165700D9FE82 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				826AD14C25EF166000D9FE82 /* Bluetooth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		826AD14C25EF166000D9FE82 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				826AD14E25EF185D00D9FE82 /* MailboxBluetoothService.swift */,
+				826AD15E25EF26F500D9FE82 /* MailboxPeripheral.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		826AD0C225EDE45800D9FE82 /* Bluetooth Mailbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826AD0ED25EDE45900D9FE82 /* Build configuration list for PBXNativeTarget "Bluetooth Mailbox" */;
+			buildPhases = (
+				826AD0BF25EDE45800D9FE82 /* Sources */,
+				826AD0C025EDE45800D9FE82 /* Frameworks */,
+				826AD0C125EDE45800D9FE82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bluetooth Mailbox";
+			packageProductDependencies = (
+				826AD12625EDEEF000D9FE82 /* SnapKit */,
+			);
+			productName = "Bluetooth Mailbox";
+			productReference = 826AD0C325EDE45800D9FE82 /* Bluetooth Mailbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		826AD0D825EDE45900D9FE82 /* Bluetooth MailboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826AD0F025EDE45900D9FE82 /* Build configuration list for PBXNativeTarget "Bluetooth MailboxTests" */;
+			buildPhases = (
+				826AD0D525EDE45900D9FE82 /* Sources */,
+				826AD0D625EDE45900D9FE82 /* Frameworks */,
+				826AD0D725EDE45900D9FE82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				826AD0DB25EDE45900D9FE82 /* PBXTargetDependency */,
+			);
+			name = "Bluetooth MailboxTests";
+			productName = "Bluetooth MailboxTests";
+			productReference = 826AD0D925EDE45900D9FE82 /* Bluetooth MailboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		826AD0E325EDE45900D9FE82 /* Bluetooth MailboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826AD0F325EDE45900D9FE82 /* Build configuration list for PBXNativeTarget "Bluetooth MailboxUITests" */;
+			buildPhases = (
+				826AD0E025EDE45900D9FE82 /* Sources */,
+				826AD0E125EDE45900D9FE82 /* Frameworks */,
+				826AD0E225EDE45900D9FE82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				826AD0E625EDE45900D9FE82 /* PBXTargetDependency */,
+			);
+			name = "Bluetooth MailboxUITests";
+			productName = "Bluetooth MailboxUITests";
+			productReference = 826AD0E425EDE45900D9FE82 /* Bluetooth MailboxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		826AD0BB25EDE45800D9FE82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					826AD0C225EDE45800D9FE82 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					826AD0D825EDE45900D9FE82 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 826AD0C225EDE45800D9FE82;
+					};
+					826AD0E325EDE45900D9FE82 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 826AD0C225EDE45800D9FE82;
+					};
+				};
+			};
+			buildConfigurationList = 826AD0BE25EDE45800D9FE82 /* Build configuration list for PBXProject "Bluetooth Mailbox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 826AD0BA25EDE45800D9FE82;
+			packageReferences = (
+				826AD12525EDEEF000D9FE82 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 826AD0C425EDE45800D9FE82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				826AD0C225EDE45800D9FE82 /* Bluetooth Mailbox */,
+				826AD0D825EDE45900D9FE82 /* Bluetooth MailboxTests */,
+				826AD0E325EDE45900D9FE82 /* Bluetooth MailboxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		826AD0C125EDE45800D9FE82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826AD0D325EDE45900D9FE82 /* LaunchScreen.storyboard in Resources */,
+				826AD0D025EDE45900D9FE82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826AD0D725EDE45900D9FE82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826AD0E225EDE45900D9FE82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		826AD0BF25EDE45800D9FE82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826AD11925EDE79400D9FE82 /* PackageModel.swift in Sources */,
+				826AD14F25EF185D00D9FE82 /* MailboxBluetoothService.swift in Sources */,
+				826AD14725EE032F00D9FE82 /* PackageTrackingCell.swift in Sources */,
+				826AD13125EDF7CA00D9FE82 /* PackageDetailController.swift in Sources */,
+				826AD0C725EDE45800D9FE82 /* AppDelegate.swift in Sources */,
+				826AD12C25EDEF7900D9FE82 /* PackageListCell.swift in Sources */,
+				826AD15A25EF22A700D9FE82 /* MailboxModel.swift in Sources */,
+				826AD13625EDF7EB00D9FE82 /* PackageDetailView.swift in Sources */,
+				826AD15F25EF26F500D9FE82 /* MailboxPeripheral.swift in Sources */,
+				826AD12125EDE88C00D9FE82 /* PackageTrackingModel.swift in Sources */,
+				826AD0FB25EDE49F00D9FE82 /* PackageListViewController.swift in Sources */,
+				826AD11125EDE6C400D9FE82 /* PackageListView.swift in Sources */,
+				826AD13F25EDFAF600D9FE82 /* PackageDetailHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826AD0D525EDE45900D9FE82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826AD0DE25EDE45900D9FE82 /* Bluetooth_MailboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826AD0E025EDE45900D9FE82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826AD0E925EDE45900D9FE82 /* Bluetooth_MailboxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		826AD0DB25EDE45900D9FE82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 826AD0C225EDE45800D9FE82 /* Bluetooth Mailbox */;
+			targetProxy = 826AD0DA25EDE45900D9FE82 /* PBXContainerItemProxy */;
+		};
+		826AD0E625EDE45900D9FE82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 826AD0C225EDE45800D9FE82 /* Bluetooth Mailbox */;
+			targetProxy = 826AD0E525EDE45900D9FE82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		826AD0D125EDE45900D9FE82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				826AD0D225EDE45900D9FE82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		826AD0EB25EDE45900D9FE82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		826AD0EC25EDE45900D9FE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		826AD0EE25EDE45900D9FE82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GD9JY8D5J;
+				INFOPLIST_FILE = "Bluetooth Mailbox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GregPersonal.Bluetooth-Mailbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		826AD0EF25EDE45900D9FE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GD9JY8D5J;
+				INFOPLIST_FILE = "Bluetooth Mailbox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GregPersonal.Bluetooth-Mailbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		826AD0F125EDE45900D9FE82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GD9JY8D5J;
+				INFOPLIST_FILE = "Bluetooth MailboxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GregPersonal.Bluetooth-MailboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bluetooth Mailbox.app/Bluetooth Mailbox";
+			};
+			name = Debug;
+		};
+		826AD0F225EDE45900D9FE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GD9JY8D5J;
+				INFOPLIST_FILE = "Bluetooth MailboxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GregPersonal.Bluetooth-MailboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bluetooth Mailbox.app/Bluetooth Mailbox";
+			};
+			name = Release;
+		};
+		826AD0F425EDE45900D9FE82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GD9JY8D5J;
+				INFOPLIST_FILE = "Bluetooth MailboxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GregPersonal.Bluetooth-MailboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bluetooth Mailbox";
+			};
+			name = Debug;
+		};
+		826AD0F525EDE45900D9FE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GD9JY8D5J;
+				INFOPLIST_FILE = "Bluetooth MailboxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "GregPersonal.Bluetooth-MailboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bluetooth Mailbox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		826AD0BE25EDE45800D9FE82 /* Build configuration list for PBXProject "Bluetooth Mailbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826AD0EB25EDE45900D9FE82 /* Debug */,
+				826AD0EC25EDE45900D9FE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826AD0ED25EDE45900D9FE82 /* Build configuration list for PBXNativeTarget "Bluetooth Mailbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826AD0EE25EDE45900D9FE82 /* Debug */,
+				826AD0EF25EDE45900D9FE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826AD0F025EDE45900D9FE82 /* Build configuration list for PBXNativeTarget "Bluetooth MailboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826AD0F125EDE45900D9FE82 /* Debug */,
+				826AD0F225EDE45900D9FE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826AD0F325EDE45900D9FE82 /* Build configuration list for PBXNativeTarget "Bluetooth MailboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826AD0F425EDE45900D9FE82 /* Debug */,
+				826AD0F525EDE45900D9FE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		826AD12525EDEEF000D9FE82 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		826AD12625EDEEF000D9FE82 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 826AD12525EDEEF000D9FE82 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 826AD0BB25EDE45800D9FE82 /* Project object */;
+}
